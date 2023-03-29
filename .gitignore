@@ -1,0 +1,6 @@
+# This file permit any file from begin pushed to the remote server...
+
+# example:
+# To prevent any pdf files from begin uploaded, type: 
+
+# *.pdf
