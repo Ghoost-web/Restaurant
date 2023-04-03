@@ -10,7 +10,10 @@
 /* To use it later:
     font-family: 'Poppins', sans-serif; 
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* To use it later:
+    font-family: 'Lobster Two', cursive;
+*/
 
 /*
     - End of importing the fonts
@@ -54,6 +57,7 @@ body {
      background-color: var(--off-white);
      font-family: 'Comfortaa', cursive;
      font-family: 'Poppins', sans-serif;
+     height: 200vh;
 }
 
 /* Scroll bar style */
@@ -125,12 +129,14 @@ button:hover {
     - End of the main styles.
 */
 
+
 /*
     - Styles for the Header
 */
 header {
     position: fixed;
     top: 0;
+    z-index: 10;
 }
 header .container {
     background-color: var(--dark-main-color);
@@ -240,6 +246,77 @@ header .log-in button:hover {
 }
 /*
     - End Styles for the Header
+*/
+
+/*
+    - Start style the main view "banner"
+*/
+
+.banner {
+    z-index: -2;
+    width: 100%;
+    /* height: 100vh; */
+    /* background: transparent; */
+    overflow: hidden;
+
+    position: absolute;
+    top: 23%;
+    position: relative;
+
+}
+.banner .words {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 100px;
+    /* width: 35%; */
+
+
+}
+.banner h3 {
+    font-family: 'Lobster Two', cursive;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--dark-main-color);
+    text-align: left;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-align: center;
+    width: fit-content;
+
+}
+.banner h1 {
+    font-family: 'Poppins', sans-serif; 
+    color: var(--dark-color-3);
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: capitalize;
+    width: fit-content;
+    text-align: center;
+}
+.banner .words p {
+    width: 50%;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 0.9em;
+    font-weight: 400;
+    text-align: left;
+}
+.banner .img-wrapper {
+    position: absolute;
+    
+
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    filter: drop-shadow(0 5px 8px #0000001f) blur(1px);
+    object-fit: cover;
+}
+/*
+    - End style the main view "banner"
 */
 
 
