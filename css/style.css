@@ -6,8 +6,10 @@
 /*
     - At first import all the required fonts here
 */
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+/* To use it later:
+    font-family: 'Poppins', sans-serif; 
+*/
 
 
 /*
@@ -31,8 +33,11 @@
     --lemon-color: #92de8b;
     --secondary-color: #ffe3b3;
     --off-white: #eee;
+    --off-white-light: #fefaf1;
     --red: #f32d17;
     --dark-color: #121212;
+    --dark-color-2: #060606;
+    --dark-color-3: #24272c;
     --transition-time: 0.4s;
     --long-transition-time: 0.9s;
     --header-height: 80px;
@@ -45,6 +50,7 @@ html {
 body {
      background-color: var(--off-white);
      font-family: 'Comfortaa', cursive;
+     font-family: 'Poppins', sans-serif;
 }
 
 /* Scroll bar style */
@@ -269,7 +275,6 @@ header button {
 /* 
     - Styles for the footer 
 */ 
-
 
 
 
