@@ -6,8 +6,9 @@
 /**
  * Start of global variables
  */
-const burgerIcon = document.querySelector(".burger-icon")
-const linksMenu = document.querySelector(".links-menu")
+const burgerIcon = document.querySelector(".burger-icon");
+const linksMenu = document.querySelector(".links-menu");
+const bodyEl = document.body;
 
 
 
@@ -23,7 +24,8 @@ const linksMenu = document.querySelector(".links-menu")
  * Start helper fuctions
  */
 burgerIcon.addEventListener("click", () => {
-    (linksMenu.style.display === "none")? linksMenu.style.display = "flex" : linksMenu.style.display = "none"
+    (linksMenu.style.display === "none")? linksMenu.style.display = "flex" : linksMenu.style.display = "none";
+
 })
 
 
