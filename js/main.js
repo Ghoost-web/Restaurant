@@ -24,8 +24,13 @@ const bodyEl = document.body;
  * Start helper fuctions
  */
 burgerIcon.addEventListener("click", () => {
-    (linksMenu.style.display === "none")? linksMenu.style.display = "flex" : linksMenu.style.display = "none";
-    bodyEl.style.overflow = 'hidden';
+    if (linksMenu.style.display === "none") {
+        linksMenu.style.display = "flex"
+        bodyEl.style.overflow = 'hidden' 
+    } else {
+        linksMenu.style.display = "none";
+        bodyEl.style.overflow = 'visible';
+    }
 })
 
 function closeMenu() {
