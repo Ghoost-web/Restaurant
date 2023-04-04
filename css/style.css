@@ -628,11 +628,8 @@ header .log-in button:hover {
             left: 0;
         }
         10% {
-            left: -400px;
+            left: -700px;
             transform: rotate(10deg);
-        }
-        100% {
-            left: -500px;
         }
     }
 
