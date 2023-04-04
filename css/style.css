@@ -410,9 +410,26 @@ header .log-in button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: -5px;
 
+    animation: moving 0.4s infinite alternate;
 
-
+}
+.scroll-down .down:nth-child(1) {
+    color: #000;
+}
+.scroll-down .down:nth-child(2) {
+    animation: moving 0.5s infinite alternate;
+}
+@keyframes moving {
+    from {
+        opacity: 0.35;
+        transform: translateY(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 /*
     - End style the main view "banner"
