@@ -263,6 +263,11 @@ header .log-in button:hover {
     padding: 0 10px;
     /* width: 50%; */
 }
+.banner h1::selection,
+.banner h3::selection,
+.banner p::selection {
+    color:inherit;
+}
 .banner h3 {
     font-family: 'Lobster Two', cursive;
     font-weight: 700;
