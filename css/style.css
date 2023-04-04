@@ -422,16 +422,7 @@ header .log-in button:hover {
 .scroll-down .down:nth-child(2) {
     animation: moving 0.5s infinite alternate;
 }
-@keyframes moving {
-    from {
-        opacity: 0.35;
-        transform: translateY(-10%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+
 /*
     - End style the main view "banner"
 */
@@ -632,7 +623,16 @@ header .log-in button:hover {
             left: 0
         }
     }
-
+    @keyframes moving {
+        from {
+            opacity: 0.35;
+            transform: translateY(-10%);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 /*
     - End of styling
 */
