@@ -256,10 +256,15 @@ header .log-in button:hover {
     justify-content: space-around;
     width: 50%;
     padding: 50px 30px;
-    animation: menu 1s linear 0s 1 forwards;
     box-shadow: 0 0 0 1000vmax rgba(0, 0, 0, 0.3);
     transform-origin: top left;
     overflow-y: auto;
+
+    animation:          menu 1s linear 0s 1 forwards;
+    -moz-animation:     menu 1s linear 0s 1 forwards;
+    -webkit-animation:  menu 1s linear 0s 1 forwards;
+    -o-animation:       menu 1s linear 0s 1 forwards;
+    -ms-animation:      menu 1s linear 0s 1 forwards;
 }
 .links-menu .cont {
     width: 100%;
@@ -424,15 +429,29 @@ header .log-in button:hover {
     align-items: center;
     flex-direction: column;
     gap: -5px;
+    -webkit-tap-highlight-color: transparent;
 
-    animation: moving 0.4s infinite alternate;
+    animation:           moving 0.4s infinite alternate;
+    -moz-animation:      moving 0.4s infinite alternate;
+    -webkit-animation:   moving 0.4s infinite alternate;
+    -o-animation:        moving 0.4s infinite alternate;
+    -ms-animation:       moving 0.4s infinite alternate;
 
+
+}
+.scroll-down a::selection {
+    color: inherit;
 }
 .scroll-down .down:nth-child(1) {
     color: #000;
 }
 .scroll-down .down:nth-child(2) {
-    animation: moving 0.5s infinite alternate;
+    animation:           moving 0.5s infinite alternate;
+    -moz-animation:      moving 0.5s infinite alternate;
+    -webkit-animation:   moving 0.5s infinite alternate;
+    -o-animation:        moving 0.5s infinite alternate;
+    -ms-animation:       moving 0.5s infinite alternate;
+
 }
 
 /*
@@ -592,6 +611,8 @@ header .log-in button:hover {
         display: flex;
     }
 }
+
+
 @media (max-width: 835px) {
     .banner .img-wrapper {
         filter: blur(3px) grayscale(0.3);
@@ -619,6 +640,12 @@ header .log-in button:hover {
     .banner .content p, .banner .content h1, .banner .content h3{
         text-align: center;
         width: fit-content;
+    }
+}
+@media (max-width: 420px) {
+    .banner h1 {
+        letter-spacing: 0.5px;
+        font-size: 1.65555rem !important;
     }
 }
 /*
