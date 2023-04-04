@@ -255,10 +255,11 @@ header .log-in button:hover {
     flex-direction: column;
     justify-content: space-around;
     width: 50%;
-    padding: 30px;
+    padding: 50px 30px;
     animation: menu 1s linear 0s 1 forwards;
     box-shadow: 0 0 0 1000vmax rgba(0, 0, 0, 0.3);
     transform-origin: top left;
+    overflow-y: auto;
 }
 .links-menu .cont {
     width: 100%;
@@ -311,14 +312,26 @@ header .log-in button:hover {
 */
 
 .banner {    
-    position: absolute;
-    top: 25%;
+    /* position: absolute; */
+    /* top: 25%; */
     /* left: 10%; */
-    left: 5%;
-    z-index: 3;
-    /* background: red; */
+    /* left: 5%; */
+    /* z-index: 3; */
     /* overflow: hidden; */
     padding: 0 10px;
+    height: calc(100vh + var(--header-height));
+    padding-top: var(--header-height);
+    width: 100%;
+    background-image: linear-gradient(to top, var(--secondary-color), var(--off-white));
+}
+.banner .content {
+    width: 40%;
+}
+.banner .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }
 .banner h1::selection,
 .banner h3::selection,
@@ -334,7 +347,7 @@ header .log-in button:hover {
     letter-spacing: 1px;
     text-transform: capitalize;
     text-shadow: 0 0 3px var(--lemon-color);
-    width: 50%;
+    width: fit-content;
 }
 .banner h1 {
     font-family: 'Poppins', sans-serif; 
@@ -343,7 +356,7 @@ header .log-in button:hover {
     font-weight: 700;
     text-transform: capitalize;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
-    width: 50%;
+    width: fit-content;
 }
 .banner p {
     font-family: 'Poppins', sans-serif; 
@@ -352,11 +365,10 @@ header .log-in button:hover {
     text-align: left;
     width: 50%;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    width: fit-content;
 }
 .banner .img-wrapper {
-    position: absolute;
-    top: 0;
-    right: 6%;
+    position: relative;
     width: 200px;
     height: 300px;
     width: 22rem;
@@ -522,7 +534,7 @@ header .log-in button:hover {
         width: 60%;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .container {
         width: 100%;
     }
@@ -548,6 +560,13 @@ header .log-in button:hover {
     .banner {
         left: 5%;
     }
+    .banner .content {
+        width: 100% !important ;
+    }
+    .banner .content p, .banner .content h1, .banner .content h3{
+        width: 100% !important ;
+        font-size: 0.8rem;    padding: 10px 0;
+    }
 }
 /* medium */
 @media (min-width: 992px) {
@@ -559,9 +578,6 @@ header .log-in button:hover {
     }
     header .links {
         display: flex;
-    }
-    .banner {
-        left: 5%;
     }
 }
 /* large */
@@ -575,14 +591,34 @@ header .log-in button:hover {
     header .links {
         display: flex;
     }
-    .banner {
-        left: 10%;
-    }
 }
 @media (max-width: 835px) {
     .banner .img-wrapper {
-        z-index: -99;
         filter: blur(3px) grayscale(0.3);
+        width: 100%;
+    }
+    .banner .content {
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.671);
+        padding: 10px;
+        border: 3px solid white;
+        border-radius: var(--small-radius);
+        z-index: 1;
+    }
+    .banner .content p {
+        /* background-color: rgba(255, 255, 255, 0.671);
+        padding: 10px;
+        border: 3px solid white;
+        border-radius: var(--small-radius); */
+    }
+    .banner .content p, .banner .content h1, .banner .content h3{
+        text-align: center;
+        width: fit-content;
     }
 }
 /*
