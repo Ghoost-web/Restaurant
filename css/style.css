@@ -261,7 +261,6 @@ header .log-in button:hover {
     /* background: red; */
     /* overflow: hidden; */
     padding: 0 10px;
-    /* width: 50%; */
 }
 .banner h1::selection,
 .banner h3::selection,
@@ -343,9 +342,26 @@ header .log-in button:hover {
     filter: opacity(0.9);
     object-fit: cover;
 }
+.scroll-down {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    font-size: 2em;
+    color: var(--dark-main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+}
 /*
     - End style the main view "banner"
 */
+
+
 
 
 /*
