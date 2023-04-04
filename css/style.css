@@ -256,8 +256,9 @@ header .log-in button:hover {
     justify-content: space-around;
     width: 50%;
     padding: 30px;
-
+    animation: menu 1s linear 0s 1 forwards;
     box-shadow: 0 0 0 1000vmax rgba(0, 0, 0, 0.3);
+    transform-origin: top left;
 }
 .links-menu .cont {
     width: 100%;
@@ -581,8 +582,39 @@ header .log-in button:hover {
 */
 
 
-
-
+/* 
+    - Animations
+*/
+    @keyframes menu {
+        0% {
+            left: -300px;
+            transform: rotate(-5deg);
+        }
+        10% {
+            left: 100px;
+        }
+        30% {
+            left: 0;
+        }
+        40% {
+            left: 20px;
+        }
+        50% {
+            left: 0px;
+        }
+        60% {
+            left: 10px;
+        }
+        70% {
+            left: 0px;
+        }
+        80% {
+            left: 5px
+        }
+        100% {
+            left: 0
+        }
+    }
 
 /*
     - End of styling
