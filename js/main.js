@@ -28,14 +28,18 @@ burgerIcon.addEventListener("click", () => {
         linksMenu.style.display = "flex"
         bodyEl.style.overflow = 'hidden' 
     } else {
-        linksMenu.style.display = "none";
+        closeMenu()
         bodyEl.style.overflow = 'visible';
     }
 })
 
 function closeMenu() {
     bodyEl.style.overflow = 'visible';
-    linksMenu.style.display = 'none';
+    linksMenu.style = 'animation: rev-menu 1s linear 0s 1 forwards;';
+    setTimeout(() => {
+        linksMenu.style = 'animation: menu 1s linear 0s 1 forwards;';
+        linksMenu.style.display = "none"
+    }, 200)
 };
 
 
