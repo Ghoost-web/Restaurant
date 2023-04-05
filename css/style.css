@@ -111,9 +111,11 @@ input {
     border: none;
     outline: none;
 }
+
 section {
     height: calc(100vh - var(--header-height));
 }
+
 button:hover {
     opacity: 0.8;
 }
@@ -515,7 +517,7 @@ header .log-in button:hover {
 /* Start Our-branches */
 .branches {
     margin-bottom: var(--section-margin);
-    background-color: var(--dark-main-color);
+    background-image: linear-gradient(to top, var(--dark-main-color), var(--off-white));
 }
 
 .branches>img {
