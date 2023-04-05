@@ -513,33 +513,18 @@ header .log-in button:hover {
 /* Start Our-branches */
 .branches {
     margin-bottom: var(--section-margin);
-    position: relative;
-    background-size: cover;
-    min-height: 80vh;
-    filter: hue-rotate(20deg);
+    background-color: var(--dark-main-color);
 }
-.branches > img {
+
+.branches>img {
     width: 100%;
-    height:100%;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
     filter: blur(1px) hue-rotate(287deg);
 }
-/* .branches::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80vh;
-    z-index: 100;
-    background-color: #028174e0;
-    z-index: -1;
-} */
-
-.branches .overlay {}
 
 .branches .container .map {
     display: grid;
@@ -552,7 +537,7 @@ header .log-in button:hover {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-color: var(--secondary-color);
+    background-image: linear-gradient(to top, var(--secondary-color), var(--off-white));
     border-radius: 20px;
     height: 70vh;
     padding: 10px;
