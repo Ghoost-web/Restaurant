@@ -514,6 +514,8 @@ header .log-in button:hover {
 .branches {
     margin-bottom: var(--section-margin);
     background-color: var(--dark-main-color);
+    background-image: linear-gradient(90deg, var(--secondary-color), var(--off-white));
+    
 }
 
 .branches>img {
@@ -549,7 +551,10 @@ header .log-in button:hover {
 .branches .container .map .box .location iframe {
     max-width: 100%;
     border-radius: 50%;
-    border: 4px solid var(--dark-main-color);
+    /* border: 4px solid var(--dark-main-color); */
+    outline: 2px solid var(--lemon-color);
+    outline-offset: 4px;
+    transition: var(--transition-time)  ;
 }
 
 /* End Our-branches */
