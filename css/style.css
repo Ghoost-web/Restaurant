@@ -541,7 +541,7 @@ header .log-in button:hover {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-image: linear-gradient(to top, var(--secondary-color), var(--off-white));
+    background-image: linear-gradient(to top, var(--off-white), var(--secondary-color));
     border-radius: 20px;
     height: 70vh;
     padding: 10px;
