@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Adding some important meta tage -->
     <meta name="keywords" content="HTML, CSS, JavaScript, Restaurant, Restaurant web project">
     <meta name="author" content="GhostWeb-Design, ghostweb_design@hotmail.com">
@@ -23,17 +24,22 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;1000&family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;1000&family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Style -->
     <link rel="icon" href="./images/restaurant-green-icon-27.png">
     <title>Restaurant</title>
     <script defer src="./js/main.js"></script>
 </head>
+
 <body>
     <!-- Start the landing page and the mobile menu -->
     <header class="center-ver">
         <div class="container">
-            <div class="logo"><h1>GHOST F<span>OO</span>D</h1></div>
+            <div class="logo">
+                <h1>GHOST F<span>OO</span>D</h1>
+            </div>
             <div class="links">
                 <a href="#">Offers</a>
                 <a href="#">Menu</a>
@@ -49,12 +55,12 @@
             </div>
             <div class="links-menu" style="display: none;">
                 <div class="cont"></div>
-                    <a href="#" onclick="closeMenu()">Offers</a>
-                    <a href="#" onclick="closeMenu()">Menu</a>
-                    <a href="#" onclick="closeMenu()">Order</a>
-                    <a href="#" onclick="closeMenu()">Branches</a>
-                    <a href="#" onclick="closeMenu()">Contact</a>
-                    <button onclick="closeMenu()">LOGIN</button>
+                <a href="#" onclick="closeMenu()">Offers</a>
+                <a href="#" onclick="closeMenu()">Menu</a>
+                <a href="#" onclick="closeMenu()">Order</a>
+                <a href="#" onclick="closeMenu()">Branches</a>
+                <a href="#" onclick="closeMenu()">Contact</a>
+                <button onclick="closeMenu()">LOGIN</button>
             </div>
         </div>
     </header>
@@ -66,19 +72,20 @@
             <div class="content">
                 <h3>Welcome to our restuarant</h3>
                 <h1>Amazing & Delicious food!</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, itaque ex! Rem expedita facilis a numquam veniam quam deserunt nostrum</p>    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, itaque ex! Rem expedita facilis a
+                    numquam veniam quam deserunt nostrum</p>
             </div>
-            <div class="img-wrapper" >
-                 <img src="./images/dishes3.jpg" alt="...">
+            <div class="img-wrapper">
+                <img src="./images/dishes3.jpg" alt="...">
             </div>
         </div>
-        </div>
-        <!-- End the banner "The main view" -->
-        <div class="scroll-down">
-            <a href="#offers"><ion-icon name="chevron-down" ></ion-icon></a>
-            <a href="#offers"><ion-icon name="chevron-down" ></ion-icon></a>
-        </div>
- 
+    </div>
+    <!-- End the banner "The main view" -->
+    <div class="scroll-down">
+        <a href="#offers"><ion-icon name="chevron-down"></ion-icon></a>
+        <a href="#offers"><ion-icon name="chevron-down"></ion-icon></a>
+    </div>
+
 
 
 
@@ -95,7 +102,37 @@
     <section id="offers"></section>
     <section id="menu"></section>
     <section id="order"></section>
-    <section id="branches"></section>
+    <section id="branches" class="branches">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="map">
+                <div class="box">
+                    <div class="location">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75993.22202938075!2d-2.2234628499999998!3d53.472245449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a4d4c5226f5db%3A0xd9be143804fe6baa!2z2YXYp9mG2LTYs9iq2LHYjCDZhdin2YbYtNmK2LPYqtix2Iwg2KfZhNmF2YXZhNmD2Kkg2KfZhNmF2KrYrdiv2Kk!5e0!3m2!1sar!2seg!4v1680665774618!5m2!1sar!2seg"
+                            width="200" height="200" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="location">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75993.22202938075!2d-2.2234628499999998!3d53.472245449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a4d4c5226f5db%3A0xd9be143804fe6baa!2z2YXYp9mG2LTYs9iq2LHYjCDZhdin2YbYtNmK2LPYqtix2Iwg2KfZhNmF2YXZhNmD2Kkg2KfZhNmF2KrYrdiv2Kk!5e0!3m2!1sar!2seg!4v1680665774618!5m2!1sar!2seg"
+                            width="200" height="200" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="location">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75993.22202938075!2d-2.2234628499999998!3d53.472245449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a4d4c5226f5db%3A0xd9be143804fe6baa!2z2YXYp9mG2LTYs9iq2LHYjCDZhdin2YbYtNmK2LPYqtix2Iwg2KfZhNmF2YXZhNmD2Kkg2KfZhNmF2KrYrdiv2Kk!5e0!3m2!1sar!2seg!4v1680665774618!5m2!1sar!2seg"
+                            width="200" height="200" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="contact"></section>
 
 
@@ -117,4 +154,5 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>

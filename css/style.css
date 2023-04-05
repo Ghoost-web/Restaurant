@@ -23,12 +23,15 @@
 /*
     - Start the main styles.
 */
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 :root {
     /* Put all the most-common used colors here */
     /* Colors */
@@ -49,15 +52,18 @@
     --header-height: 80px;
     --small-radius: 8px;
     --big-radius: 15px;
+    --section-margin: 3.8rem
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
-     background-color: var(--off-white);
-     font-family: 'Comfortaa', cursive;
-     font-family: 'Poppins', sans-serif;
-     height: 200vh;
+    background-color: var(--off-white);
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Poppins', sans-serif;
+    height: 200vh;
 }
 
 /* Scroll bar style */
@@ -109,17 +115,20 @@ input {
 button:hover {
     opacity: 0.8;
 }
+
 .container {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .center {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
 .center-ver {
     left: 50%;
     transform: translate(-50%);
@@ -138,6 +147,7 @@ header {
     top: 0;
     z-index: 10;
 }
+
 header .container {
     background-color: var(--dark-main-color);
     color: white;
@@ -150,6 +160,7 @@ header .container {
     border-bottom-right-radius: var(--big-radius);
     box-shadow: 0px 5px 8px #0000001f;
 }
+
 header .container .logo h1 {
     background-color: var(--off-white);
     color: var(--dark-main-color);
@@ -157,20 +168,24 @@ header .container .logo h1 {
     border-radius: var(--small-radius);
     font-weight: 600;
 }
+
 header .container .logo h1 span {
     color: var(--main-color);
 }
+
 header .container .links {
     justify-content: space-between;
     align-items: center;
     width: 70%;
 }
+
 header .container .links a {
     font-size: 1.2rem;
     position: relative;
     padding: 25px;
     overflow: hidden;
 }
+
 header .container .links a::after {
     content: "";
     height: 3px;
@@ -181,10 +196,12 @@ header .container .links a::after {
     bottom: 0;
     transition: var(--transition-time);
 }
+
 header .container .links a:hover::after {
     width: 100%;
     left: 0;
 }
+
 /* header .log-in  */
 header .log-in button {
     padding: 10px;
@@ -196,10 +213,12 @@ header .log-in button {
     font-size: 1.2rem;
     font-weight: 600;
 }
+
 header .log-in button:hover {
     background-color: var(--main-color);
     color: var(--dark-color-3);
 }
+
 .burger-icon {
     width: 50px;
     height: 50px;
@@ -208,6 +227,7 @@ header .log-in button:hover {
     align-items: center;
     cursor: pointer;
 }
+
 .burger-icon span {
     display: block;
     width: 100%;
@@ -217,6 +237,7 @@ header .log-in button:hover {
     background-color: var(--main-color);
     transition: var(--transition-time);
 }
+
 .burger-icon span::after {
     content: "";
     width: 100%;
@@ -228,6 +249,7 @@ header .log-in button:hover {
     background-color: var(--main-color);
     transition: var(--transition-time);
 }
+
 .burger-icon span::before {
     content: "";
     width: 100%;
@@ -239,11 +261,13 @@ header .log-in button:hover {
     background-color: var(--main-color);
     transition: var(--transition-time);
 }
+
 .burger-icon:hover span:before,
 .burger-icon:hover span::after,
 .burger-icon:hover span {
     background-color: white;
 }
+
 .links-menu {
     position: fixed;
     top: var(--header-height);
@@ -260,12 +284,13 @@ header .log-in button:hover {
     transform-origin: top left;
     overflow-y: auto;
 
-    animation:          menu 1s linear 0s 1 forwards;
-    -moz-animation:     menu 1s linear 0s 1 forwards;
-    -webkit-animation:  menu 1s linear 0s 1 forwards;
-    -o-animation:       menu 1s linear 0s 1 forwards;
-    -ms-animation:      menu 1s linear 0s 1 forwards;
+    animation: menu 1s linear 0s 1 forwards;
+    -moz-animation: menu 1s linear 0s 1 forwards;
+    -webkit-animation: menu 1s linear 0s 1 forwards;
+    -o-animation: menu 1s linear 0s 1 forwards;
+    -ms-animation: menu 1s linear 0s 1 forwards;
 }
+
 .links-menu .cont {
     width: 100%;
     height: 100%;
@@ -276,6 +301,7 @@ header .log-in button:hover {
     opacity: 0.9;
     filter: blur(30px);
 }
+
 .links-menu a {
     font-size: 1.3rem;
     font-weight: 600;
@@ -284,20 +310,24 @@ header .log-in button:hover {
     padding: 20px 10px;
     border-radius: var(--small-radius);
     transition: padding-left var(--long-transition-time);
-} 
+}
+
 .links-menu a::selection {
     color: inherit;
 }
+
 .links-menu a:hover {
     padding-top: 19px;
     padding-bottom: 19px;
-    padding-left: 100px ;
+    padding-left: 100px;
     border: 1px solid white;
 }
+
 .links-menu button:hover {
     background-color: var(--main-color);
     color: var(--dark-color-3);
 }
+
 .links-menu button {
     padding: 10px;
     border-radius: var(--small-radius);
@@ -308,6 +338,7 @@ header .log-in button:hover {
     font-size: 1.2rem;
     font-weight: 600;
 }
+
 /*
     - End Styles for the Header
 */
@@ -316,7 +347,7 @@ header .log-in button:hover {
     - Start style the main view "banner"
 */
 
-.banner {    
+.banner {
     /* position: absolute; */
     /* top: 25%; */
     /* left: 10%; */
@@ -328,21 +359,26 @@ header .log-in button:hover {
     padding-top: var(--header-height);
     width: 100%;
     background-image: linear-gradient(to top, var(--secondary-color), var(--off-white));
+    margin-bottom: var(--section-margin);
 }
+
 .banner .content {
     width: 40%;
 }
+
 .banner .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100%;
 }
+
 .banner h1::selection,
 .banner h3::selection,
 .banner p::selection {
-    color:inherit;
+    color: inherit;
 }
+
 .banner h3 {
     font-family: 'Lobster Two', cursive;
     font-weight: 700;
@@ -354,8 +390,9 @@ header .log-in button:hover {
     text-shadow: 0 0 3px var(--lemon-color);
     width: fit-content;
 }
+
 .banner h1 {
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
     color: var(--dark-color-3);
     font-size: 3em;
     font-weight: 700;
@@ -363,8 +400,9 @@ header .log-in button:hover {
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
     width: fit-content;
 }
+
 .banner p {
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
     font-size: 0.9em;
     font-weight: 400;
     text-align: left;
@@ -372,6 +410,7 @@ header .log-in button:hover {
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
     width: fit-content;
 }
+
 .banner .img-wrapper {
     position: relative;
     width: 200px;
@@ -381,6 +420,7 @@ header .log-in button:hover {
 
     box-shadow: 0 1px 3px 2px var(--lemon-color);
 }
+
 .banner .img-wrapper::before {
     content: '';
     width: 20%;
@@ -395,6 +435,7 @@ header .log-in button:hover {
     box-shadow: 0 0 3px 1px var(--lemon-color);
     opacity: 0.7;
 }
+
 .banner .img-wrapper::after {
     content: '';
     width: 3px;
@@ -402,13 +443,14 @@ header .log-in button:hover {
     position: absolute;
     top: -8%;
     right: -8%;
-    
+
     background-color: var(--main-color);
     border-bottom-left-radius: var(--big-radius);
     border-bottom-right-radius: var(--big-radius);
     box-shadow: 0 0 3px 1px var(--lemon-color);
     opacity: 0.7;
 }
+
 .banner .img-wrapper img {
     width: 100%;
     height: 100%;
@@ -417,6 +459,7 @@ header .log-in button:hover {
     filter: opacity(0.9);
     object-fit: cover;
 }
+
 .scroll-down {
     position: absolute;
     bottom: 5%;
@@ -431,26 +474,29 @@ header .log-in button:hover {
     gap: -5px;
     -webkit-tap-highlight-color: transparent;
 
-    animation:           moving 0.4s infinite alternate;
-    -moz-animation:      moving 0.4s infinite alternate;
-    -webkit-animation:   moving 0.4s infinite alternate;
-    -o-animation:        moving 0.4s infinite alternate;
-    -ms-animation:       moving 0.4s infinite alternate;
+    animation: moving 0.4s infinite alternate;
+    -moz-animation: moving 0.4s infinite alternate;
+    -webkit-animation: moving 0.4s infinite alternate;
+    -o-animation: moving 0.4s infinite alternate;
+    -ms-animation: moving 0.4s infinite alternate;
 
 
 }
+
 .scroll-down a::selection {
     color: inherit;
 }
+
 .scroll-down .down:nth-child(1) {
     color: #000;
 }
+
 .scroll-down .down:nth-child(2) {
-    animation:           moving 0.5s infinite alternate;
-    -moz-animation:      moving 0.5s infinite alternate;
-    -webkit-animation:   moving 0.5s infinite alternate;
-    -o-animation:        moving 0.5s infinite alternate;
-    -ms-animation:       moving 0.5s infinite alternate;
+    animation: moving 0.5s infinite alternate;
+    -moz-animation: moving 0.5s infinite alternate;
+    -webkit-animation: moving 0.5s infinite alternate;
+    -o-animation: moving 0.5s infinite alternate;
+    -ms-animation: moving 0.5s infinite alternate;
 
 }
 
@@ -464,7 +510,57 @@ header .log-in button:hover {
 /*
     - Styles for the sections
 */
+/* Start Our-branches */
+.branches {
+    margin-bottom: var(--section-margin);
+    position: relative;
+    background-image: url(../images/Our-branches/SignUp.jpg);
+    background-size: cover;
+    min-height: 80vh;
+    z-index: -2;
+}
 
+.branches::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    z-index: 100;
+    background-color: #028174e0;
+    z-index: -1;
+}
+
+.branches .overlay {}
+
+.branches .container .map {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding-top: 1rem;
+}
+
+.branches .container .map .box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    height: 70vh;
+    padding: 10px;
+    -webkit-box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
+    -moz-box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
+    box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
+}
+
+.branches .container .map .box .location iframe {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 4px solid var(--dark-main-color);
+}
+
+/* End Our-branches */
 /*
     - End styles for the sections
 */
@@ -501,7 +597,7 @@ header .log-in button:hover {
 
 /* 
     - Styles for the footer 
-*/ 
+*/
 
 
 
@@ -509,7 +605,7 @@ header .log-in button:hover {
 
 /* 
     - End styles for the footer 
-*/ 
+*/
 
 
 
@@ -522,91 +618,119 @@ header .log-in button:hover {
     .container {
         width: 750px;
     }
+
     .burger-icon {
         display: flex;
     }
+
     header .links {
         display: none;
     }
+
     .links-menu {
         width: 50%;
     }
 
 }
+
 @media (max-width: 768px) {
     .container {
         width: 100%;
     }
+
     .burger-icon {
         display: flex;
     }
+
     header .links {
         display: none;
     }
+
     header {
         width: 100%;
     }
+
     header .container {
         border-radius: 0;
     }
+
     .links-menu {
         width: 60%;
     }
 }
+
 @media (max-width: 420px) {
     .container {
         width: 100%;
     }
+
     .burger-icon {
         display: flex;
         transform: scale(0.7);
     }
+
     header .links {
         display: none;
     }
+
     header {
         width: 100%;
     }
+
     header .container {
         border-radius: 0;
     }
+
     header .logo {
         font-size: 0.5rem;
     }
+
     .links-menu {
         width: 100%;
     }
+
     .banner {
         left: 5%;
     }
+
     .banner .content {
-        width: 100% !important ;
+        width: 100% !important;
     }
-    .banner .content p, .banner .content h1, .banner .content h3{
-        width: 100% !important ;
-        font-size: 0.8rem;    padding: 10px 0;
+
+    .banner .content p,
+    .banner .content h1,
+    .banner .content h3 {
+        width: 100% !important;
+        font-size: 0.8rem;
+        padding: 10px 0;
     }
 }
+
 /* medium */
 @media (min-width: 992px) {
     .container {
         width: 970px;
     }
+
     .burger-icon {
         display: none;
     }
+
     header .links {
         display: flex;
     }
 }
+
 /* large */
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
     }
+
     .burger-icon {
         display: none;
     }
+
     header .links {
         display: flex;
     }
@@ -618,6 +742,7 @@ header .log-in button:hover {
         filter: blur(3px) grayscale(0.3);
         width: 100%;
     }
+
     .banner .content {
         width: 80%;
         position: absolute;
@@ -631,23 +756,29 @@ header .log-in button:hover {
         border-radius: var(--small-radius);
         z-index: 1;
     }
+
     .banner .content p {
         /* background-color: rgba(255, 255, 255, 0.671);
         padding: 10px;
         border: 3px solid white;
         border-radius: var(--small-radius); */
     }
-    .banner .content p, .banner .content h1, .banner .content h3{
+
+    .banner .content p,
+    .banner .content h1,
+    .banner .content h3 {
         text-align: center;
         width: fit-content;
     }
 }
+
 @media (max-width: 420px) {
     .banner h1 {
         letter-spacing: 0.5px;
         font-size: 1.65555rem !important;
     }
 }
+
 /*
     - End of responsive
 */
@@ -656,56 +787,68 @@ header .log-in button:hover {
 /* 
     - Animations
 */
-    @keyframes menu {
-        0% {
-            left: -300px;
-            transform: rotate(-5deg);
-        }
-        10% {
-            left: 100px;
-        }
-        30% {
-            left: 0;
-        }
-        40% {
-            left: 20px;
-        }
-        50% {
-            left: 0px;
-        }
-        60% {
-            left: 10px;
-        }
-        70% {
-            left: 0px;
-        }
-        80% {
-            left: 5px
-        }
-        100% {
-            left: 0
-        }
-    }
-    @keyframes rev-menu {
-        0% {
-            left: 0;
-        }
-        10% {
-            left: -700px;
-            transform: rotate(10deg);
-        }
+@keyframes menu {
+    0% {
+        left: -300px;
+        transform: rotate(-5deg);
     }
 
-    @keyframes moving {
-        from {
-            opacity: 0.35;
-            transform: translateY(-10%);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    10% {
+        left: 100px;
     }
+
+    30% {
+        left: 0;
+    }
+
+    40% {
+        left: 20px;
+    }
+
+    50% {
+        left: 0px;
+    }
+
+    60% {
+        left: 10px;
+    }
+
+    70% {
+        left: 0px;
+    }
+
+    80% {
+        left: 5px
+    }
+
+    100% {
+        left: 0
+    }
+}
+
+@keyframes rev-menu {
+    0% {
+        left: 0;
+    }
+
+    10% {
+        left: -700px;
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes moving {
+    from {
+        opacity: 0.35;
+        transform: translateY(-10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /*
     - End of styling
 */
