@@ -111,7 +111,9 @@ input {
     border: none;
     outline: none;
 }
-
+section {
+    height: calc(100vh - var(--header-height));
+}
 button:hover {
     opacity: 0.8;
 }
