@@ -612,6 +612,8 @@ section#menu .box {
     width: 100%;
     gap: 5px;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    animation: visible 0.4s linear 0s 1 forwards;
+
 }
 section#menu .box a.item {
     color: white;
@@ -657,7 +659,6 @@ section#menu .box .item p {
     font-size: 0.9rem;
     padding: 10px;
     height: 300px;
-    text-overflow: ellipsis;
     overflow: auto;
 }
 section#menu .box .item p::-webkit-scrollbar {
@@ -956,7 +957,14 @@ section#menu .container {
         transform: translateY(0);
     }
 }
-
+@keyframes visible {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 /*
     - End of styling
 */
