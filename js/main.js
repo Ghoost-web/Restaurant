@@ -9,7 +9,7 @@
 const burgerIcon = document.querySelector(".burger-icon");
 const linksMenu = document.querySelector(".links-menu");
 const bodyEl = document.body;
-
+const cateBtns = document.querySelectorAll(".cate-btn")
 
 
 
@@ -41,18 +41,16 @@ function closeMenu() {
         linksMenu.style.display = "none"
     }, 200)
 };
+let ind = 1
 
-
-
-
-
-
-
-
-
-
-
-
+const btns = Array.from(cateBtns)
+let i = 1;
+setInterval(() => {
+    btns.forEach(b => b.classList.remove("active"));
+    btns[i].classList.add("active");
+    if (i === btns.length - 1) i = 0;
+    else i++;
+}, 4000);
 
 
 /**
